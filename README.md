@@ -12,6 +12,23 @@ Current unified multimodal diffusion models like [MMaDA](https://github.com/Gen-
 
 **CoDA addresses this fundamental limitation** by introducing continual learning mechanisms specifically designed for unified diffusion architectures, enabling these systems to acquire new capabilities over time without catastrophic forgetting.
 
+## Quick Start
+
+### Reproducing MMaDA Results
+
+
+
+# 3. Test text generation
+python experiments/scripts/reproduce_text_generation.py
+
+# 4. Test multimodal understanding (requires wandb login)
+wandb login
+python ../experiments/scripts/reproduce_multimodal.py
+
+# 5. Test text-to-image generation
+python ../experiments/scripts/reproduce_t2i.py
+```
+
 ## Key Innovation
 
 While MMaDA unifies text and image generation through:
