@@ -16,16 +16,14 @@ Current unified multimodal diffusion models like [MMaDA](https://github.com/Gen-
 
 ### Reproducing MMaDA Results
 
-
-
-# 3. Test text generation
+# 1. Test text generation
 python experiments/scripts/reproduce_text_generation.py
 
-# 4. Test multimodal understanding (requires wandb login)
+# 2. Test multimodal understanding (requires wandb login)
 wandb login
 python ../experiments/scripts/reproduce_multimodal.py
 
-# 5. Test text-to-image generation
+# 3. Test text-to-image generation
 python ../experiments/scripts/reproduce_t2i.py
 ```
 
