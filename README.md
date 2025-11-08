@@ -16,14 +16,19 @@ Current unified multimodal diffusion models like [MMaDA](https://github.com/Gen-
 
 ### Reproducing MMaDA Results
 
-# 1. Test text generation
+##### 1. Test text generation
+```bash
 python experiments/scripts/reproduce_text_generation.py
+```
 
-# 2. Test multimodal understanding (requires wandb login)
+##### 2. Test multimodal understanding (requires wandb login)
+```bash
 wandb login
 python ../experiments/scripts/reproduce_multimodal.py
+```
 
-# 3. Test text-to-image generation
+##### 3. Test text-to-image generation
+```bash
 python ../experiments/scripts/reproduce_t2i.py
 ```
 
@@ -41,7 +46,7 @@ While MMaDA unifies text and image generation through:
 - Cross-modal coherence preservation during sequential learning
 
 ## Architecture
-```
+```bash
 ┌─────────────────────────────────────────────────────────┐
 │                    CoDA Framework                        │
 ├─────────────────────────────────────────────────────────┤
